@@ -1,1 +1,1 @@
-Repositório de exercicíos e desafio da plataforma Course | Trybe
+Repositório de exercicíos de HTML & CSS - Seletores e posicionamento - 3.4
