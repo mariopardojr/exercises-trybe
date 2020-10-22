@@ -1,6 +1,8 @@
 body { 
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    color: white;
+    background: grey;
     margin: 0;
 }
 
@@ -13,5 +15,21 @@ table, th, td {
 }
 
 img {
-    width: 100%;
+    width: 70%;
+    height: 40%;
 }
+
+.header-title {
+    background-image: url(stomatopoda.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 80%;
+    background-position: 60% 40%;
+    display: inline-block
+    
+}
+ aside {
+     display: inline-block;
+
+ }
+
