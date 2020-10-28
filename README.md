@@ -1,1 +1,1 @@
-Repositório de exercicíos de HTML & CSS - Seletores e posicionamento - 3.4
+Repositório de exercicíos do curso de Desenvolvimento de Software | Trybe
