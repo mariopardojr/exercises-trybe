@@ -82,10 +82,13 @@
 
         let listNum = document.createElement("ul");
         document.querySelector(".right-content").appendChild(listNum);
+
+        
         let arrayNum = ["Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"];
         for (let index = 0; index < arrayNum.length; index += 1) {
             let listNumItens = document.createElement("li");
             listNumItens.innerText = arrayNum[index];
+            listNumItens.className = "numbers";
             
             document.querySelector("ul").appendChild(listNumItens);
         }
@@ -94,6 +97,21 @@
             let subtitle  = document.createElement("h3");
             subtitle.innerText = `Subtitle ${index}`;
             document.querySelector(".main-content").appendChild(subtitle);
+            subtitle.className = "description"
+        }
+        let leftContent = document.querySelector(".left-content");
+        title.className = "title";
+        document.querySelector(".main-content").removeChild(leftContent);
+        document.querySelector(".right-content").style.marginRight = "auto";
+        document.querySelector(".center-content").style.background = "green";
+        
+        let numeroLista = document.querySelectorAll(".numbers");
+        listaDeNumeros = document.querySelector("ul");
+        for (let index = 0; index < numeroLista.length; index += 1) {
+          let elemento = numeroLista[index];
+          if (elemento.innerText.includes('Nove') || elemento.innerText.includes('Dez')) {
+            listaDeNumeros.removeChild(elemento);
+          }
         }
              
     </script>
