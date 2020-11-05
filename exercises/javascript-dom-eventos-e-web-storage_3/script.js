@@ -15,6 +15,8 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
 window.onload = function () {
+    // Exercício 1
+
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let diasLista = document.getElementById("days");
     for (let index = 0; index < dezDaysList.length; index += 1) {
@@ -33,11 +35,19 @@ window.onload = function () {
             day.className = "day"
             diasLista.appendChild(day);
         }
-        day.innerText = diaMes;
-        console.log(day);
-        
-    }
-    
-
-
+        day.innerText = diaMes;   
+    }   
 }
+
+// Exercício 2
+
+function criaBotao(btnName) {
+    let botao = document.createElement("button");
+    let btnContainer = document.querySelector(".buttons-container");
+    botao.id = "btn-holiday";
+    botao.innerText = `${btnName}`;
+    btnContainer.appendChild(botao);
+}
+
+criaBotao("Feriados");
+
