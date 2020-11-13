@@ -39,12 +39,16 @@ window.onload = function () {
     function verificaData () {
         let getInputData = document.getElementById('input-data').value;
         let data = getInputData.split(/\D+/)
-        if (getInputData[2].includes('/') == true && getInputData[5].includes('/') == true){
-            if (parseInt(data[0], 10) <= 0 || parseInt(data[0], 10) > 31 || parseInt(data[1], 10) <= 0 || parseInt(data[1], 10) > 12 || parseInt(data[2], 10) <= 0) {
-                alert('Data inválida');
-            } 
-        } else {
-            alert('Data inválida')
+        if (getInputData[2].includes('/') == false && getInputData[5].includes('/') == false){
+            alert('Formato de data inválido');
+        } else if (parseInt(data[0], 10) <= 0 || parseInt(data[0], 10) > 31) {
+            alert('O dia inserido não está entre 0 e 31');
+        } else if (parseInt(data[1], 10) <= 0 || parseInt(data[1], 10) > 12 ) {
+            alert('O mês inserido não está entre 0 e 12');
+        } else if (parseInt(data[2]), 10) {
+            alert('Ano inserido não é válido');
+        } else if (data.length < 10) {
+            alert('Formato de data inválido')
         }
     }
 }
