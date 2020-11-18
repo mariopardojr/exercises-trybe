@@ -36,7 +36,8 @@ window.onload = function () {
         getListaEstados.appendChild(opcao);
     }
     // Verifica data
-    function verificaData () {
+    document.getElementById('enviar').addEventListener('click', function (event) {
+        event.preventDefault();
         let getInputData = document.getElementById('input-data').value;
         let data = getInputData.split(/\D+/)
         if (getInputData[2].includes('/') == false && getInputData[5].includes('/') == false){
@@ -47,8 +48,8 @@ window.onload = function () {
             alert('O mês inserido não está entre 0 e 12');
         } else if (parseInt(data[2]), 10) {
             alert('Ano inserido não é válido');
-        } else if (data.length < 10) {
-            alert('Formato de data inválido')
         }
-    }
+    })
+    
+ 
 }
