@@ -1,1 +1,1 @@
-Repositório de exercicíos de Reduce | Trybe
+Repositório de exercicíos do curso de desenvolvimento de software | Trybe
